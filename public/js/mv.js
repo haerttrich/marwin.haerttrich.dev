@@ -200,8 +200,11 @@ function cloneAndStripeElement(element, clipPathName, parent) {
 
   dynamics.css(el, {
     position: 'absolute',
-    left: Math.round(box.left + window.scrollX),
-    top: Math.round(box.top + window.scrollY),
+    // fixing error in mobile of shifted glitch elements
+    // left: Math.round(box.left + window.scrollX),
+    // top: Math.round(box.top + window.scrollY),
+    left: Math.round(box.left),
+    top: Math.round(box.top),
     width: Math.ceil(box.width),
     height: Math.ceil(box.height),
     display: 'none',
