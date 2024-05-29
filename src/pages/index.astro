@@ -1,17 +1,8 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta charset="utf-8" />
-  <link rel="icon" type="image/svg" href="favicon.svg">
-  <link rel="stylesheet" href="/css/index.css">
-  <title>Marwin Härttrich</title>
-</head>
-<body>
+<Layout>
   <svg id="clip-paths" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g></g></svg>
   <div id="page">
     <header>
@@ -28,7 +19,32 @@
         </div>
       </div>
     </header>
+
     <div id="content">
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <ul>
+          <li><a href="https://slds-lmu.github.io/dl4nlp/">Deep Learning for Natural Language Processing, LMU Munich, Winter Term 2023/24</a></li>
+          <li><a href="https://moodle.lmu.de/course/view.php?id=28962">Basic Module for Computational Linguistics, LMU Munich, Winter Term 2023/24</a></li>
+          <li><a href="https://www.cip.ifi.lmu.de/~haerttrich/uebung_basismodul">Basic Module for Computational Linguistics, LMU Munich, Winter Term 2022/23</a></li>
+          <li><a href="">Applied Software Technologies, RFWU Bonn, Summer Term 2020</a></li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="">Comming soon</a></li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+          <li><a href="">Comming soon</a></li>
+        </ul>
+      </section>
+
       <section id="Volunteering">
         <h2>Volunteering</h2>
         <ul>
@@ -36,28 +52,14 @@
           <li><a href="https://fachschaft.cis.lmu.de/">Fachschaft Computational Linguistics, LMU Munich</a></li>
         </ul>
       </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li><a href="">Comming soon</a></li>
-        </ul>
-      </section>
-      <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-          <li><a href="">Comming soon</a></li>
-        </ul>
-      </section>
     </div>
   </div>
+  
   <div id="intro" class="full-size">
     <div id="logo-container" class="full-size">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 756 756" ><g transform="matrix(0.589256,0.589256,-0.588734,0.588734,377.221,-67.413)"><path d="M460.63,472.441L496.063,472.441L496.063,661.919L661.417,661.919L661.417,295.276L472.441,295.276L472.441,259.843L661.417,259.843L661.417,94.488L295.276,94.488L295.276,295.276L94.488,295.276L94.488,659.6L259.843,659.6L259.843,472.441L295.276,472.441L295.276,661.919L460.63,661.919L460.63,472.441Z" fill="white"/></g></svg>
     </div>
     <svg id="stripes" class="full-size" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
   </div>
-  <script is:inline src="/js/dynamics.js"></script>
-  <script is:inline src="/js/tinycolor.js"></script>
-  <script is:inline src="/js/mv.js"></script>
-</body>
+</Layout>
 
